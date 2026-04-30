@@ -1,12 +1,12 @@
 # MorseDecoder
 
-## YouTube Demo
+### YouTube Demo
 [![Watch the demo](https://img.youtube.com/vi/Axz3j_8UlqE/hqdefault.jpg)](https://www.youtube.com/Axz3j_8UlqE)
 
-##Summary
+### Summary
 This project implements a real-time embedded system that captures analog audio signals and decodes them into Morse code using an Arduino Uno R3. The system processes live input from an analog sensor, performs basic signal conditioning, and interprets tone durations to reconstruct alphanumeric text.
 
-##How it works
+### How it works
 
 The system continuously samples an analog audio input and computes a smoothed signal using an exponential moving average filter. A baseline calibration step is performed at startup to adapt to ambient noise conditions.
 
@@ -18,13 +18,13 @@ Letter and word spacing
 
 These timing intervals are used to build Morse code sequences in real time.
 
-##Decoding logic
+### Decoding logic
 
 A fixed lookup table maps Morse patterns (e.g., ".-", "-...") to their corresponding ASCII characters (A–Z). Once a full character or word boundary is detected, the system decodes and outputs the result over serial communication.
 
 Unrecognized patterns are safely handled by returning a placeholder character (?).
 
-##Key features
+### Key features
 Real-time signal processing on constrained embedded hardware
 Baseline calibration for adaptive noise handling
 Exponential smoothing filter for signal stability
@@ -33,7 +33,7 @@ Static memory design (no dynamic allocation)
 Lightweight lookup table for fast decoding
 Serial output for live transcription
 
-##Technical stack
+### Technical stack
 C/C++
 Arduino Uno R3
 Analog signal processing
