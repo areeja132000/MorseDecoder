@@ -1,7 +1,9 @@
 # MorseDecoder
 
 ### YouTube Demo
-[![Watch the demo](https://img.youtube.com/vi/Axz3j_8UlqE/hqdefault.jpg)](https://www.youtube.com/Axz3j_8UlqE)
+<a href="https://www.youtube.com/watch?v=Axz3j_8UlqE">
+  <img src="https://img.youtube.com/vi/Axz3j_8UlqE/hqdefault.jpg" width="300">
+</a>
 
 ### Summary
 This project implements a real-time embedded system that captures analog audio signals and decodes them into Morse code using an Arduino Uno R3. The system processes live input from an analog sensor, performs basic signal conditioning, and interprets tone durations to reconstruct alphanumeric text.
