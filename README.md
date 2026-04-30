@@ -2,7 +2,7 @@
 
 ### YouTube Demo
 <a href="https://www.youtube.com/watch?v=Axz3j_8UlqE">
-  <img src="https://img.youtube.com/vi/Axz3j_8UlqE/hqdefault.jpg" width="300">
+  <img src="https://img.youtube.com/vi/Axz3j_8UlqE/hqdefault.jpg" width="200">
 </a>
 
 ### Summary
@@ -14,9 +14,9 @@ The system continuously samples an analog audio input and computes a smoothed si
 
 The processed signal is converted into a binary tone state (ON/OFF) using a simple threshold detector. A lightweight state machine tracks transitions between sound and silence to measure:
 
-Dot vs dash durations
-Intra-character gaps
-Letter and word spacing
+- Dot vs dash durations
+- Intra-character gaps
+- Letter and word spacing
 
 These timing intervals are used to build Morse code sequences in real time.
 
@@ -27,17 +27,17 @@ A fixed lookup table maps Morse patterns (e.g., ".-", "-...") to their correspon
 Unrecognized patterns are safely handled by returning a placeholder character (?).
 
 ### Key features
-Real-time signal processing on constrained embedded hardware
-Baseline calibration for adaptive noise handling
-Exponential smoothing filter for signal stability
-State machine-based Morse decoding logic
-Static memory design (no dynamic allocation)
-Lightweight lookup table for fast decoding
-Serial output for live transcription
+- Real-time signal processing on constrained embedded hardware
+- Baseline calibration for adaptive noise handling
+- Exponential smoothing filter for signal stability
+- State machine-based Morse decoding logic
+- Static memory design (no dynamic allocation)
+- Lightweight lookup table for fast decoding
+- Serial output for live transcription
 
 ### Technical stack
-C/C++
-Arduino Uno R3
-Analog signal processing
-Time-domain analysis
-Embedded state machines
+- C/C++
+- Arduino Uno R3
+- Analog signal processing
+- Time-domain analysis
+- Embedded state machines
